@@ -1,6 +1,1 @@
-const student = [
-  {
-    name: "Agustin",
-    surname: "Godoy",
-  },
-];
+const student = [];
