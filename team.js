@@ -7,7 +7,7 @@ const student = [
         hobby:"Videojuegos",
         favoritefood:"Pasta",
         favoritevideogame:"The Legend of Heroes",
-        favoritefilm:"Lord of the Rings",
+        favoritefilm:"Your Name",
         favoritebook:"Harry Potter",
         petname:""
     }
