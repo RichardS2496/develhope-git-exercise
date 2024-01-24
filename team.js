@@ -1,11 +1,10 @@
 const student = [
     { name : "Antonio", surname: "Martinez", 
     age: 25, city: "valencia", 
-    hobby: "SimRacing" , favouriteFood: "Pizza",
-    favouriteVideoGame: "Bloodborne", favouriteFilm : "Shutter Island",
-    favouriteBook: "El resplandor", petName : "Midna"
+    hobby: "SimRacing" , favoriteFood: "Pizza",
+    favoriteVideoGame: "Bloodborne", favoriteFilm : "Shutter Island",
+    favoriteBook: "El resplandor", petName : "Midna"
     },
-
     { name : "Luis", surname : "Grandini",
     age : 26, city : "Caracas",
     hobby : "Videogames", favoriteFood : "Pizza",
@@ -32,7 +31,7 @@ const student = [
 - Print the team middle age.
 - Print who has a pet (name petName).
 - Print who wrote ‘LOL’ or ‘League Of Legends’ as a favorite video game. (name).
-- Print if there are some members with the same name (name).
+- Print if there are some members with the same surname (surname).
 */
 function LasMascotas(estud){
     const laMasc = []
@@ -45,4 +44,17 @@ function LasMascotas(estud){
     }
     return laMasc;
 };
+
+function NoLoleros(studi){
+    const Lolsito = []
+    for (let j = 0 ; j < studi.length ; j++){
+        let elLol = studi[j].favoriteVideoGame;
+        if (elLol == "LOL" || elLol == "League of Legends" ){
+            let esUnLolero = studi[j].name + " porque tienes que jugar a " + elLol
+            Lolsito.push(esUnLolero);
+        }
+    }
+    return Lolsito;
+}
 console.log(LasMascotas(student));
+console.log(NoLoleros(student));
