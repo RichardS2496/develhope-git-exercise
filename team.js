@@ -16,7 +16,7 @@ const student = [
     age:28, city:"Madrid",
     hobby:"Videojuegos", favoritefood:"Pasta",
     favoritevideogame:"The Legend of Heroes", favoritefilm:"Your Name",
-    favoritebook:"Harry Potter", petname:""
+    favoritebook:"Harry Potter", petName:""
     },
     { name: "Richard", surname: "Suarez",
     age: 27, city: "Ciudad Real",
@@ -34,3 +34,15 @@ const student = [
 - Print who wrote ‘LOL’ or ‘League Of Legends’ as a favorite video game. (name).
 - Print if there are some members with the same name (name).
 */
+function LasMascotas(estud){
+    const laMasc = []
+    for (let i = 0 ; i < estud.length ; i++){
+        let mascota = estud[i].petName;
+        if (typeof(mascota) === "string" && mascota.length > 2){
+            let mascotaSi = "La mascota de " + estud[i].name + " se llama " + estud[i].petName;
+            laMasc.push(mascotaSi);
+        }
+    }
+    return laMasc;
+};
+console.log(LasMascotas(student));
