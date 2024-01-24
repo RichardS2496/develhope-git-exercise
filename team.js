@@ -34,3 +34,37 @@ const student = [
 - Print who wrote ‘LOL’ or ‘League Of Legends’ as a favorite video game. (name).
 - Print if there are some members with the same name (name).
 */
+
+
+function orden(estudiante) {
+    student.sort((o1, o2) => {
+        if (o1.surname < o2.surname) {
+            return -1
+        } else if (o1.surname > o2.surname) {
+            return 1
+        } else {
+            return 0
+        }
+    })
+}
+
+orden(student)
+
+for (let index = 0; index < student.length; index++) {
+    let apellidos = student[index].surname + " " + student[index].name
+    console.log(apellidos);
+}
+
+function promedio(edad) {
+    let average=0
+    for (let index = 0; index < edad.length; index++) {
+        let prom = edad[index].age 
+        average = (average + prom)
+        
+    }
+    let final_average = average/4
+    return final_average
+ }
+
+console.log(promedio(student));
+
