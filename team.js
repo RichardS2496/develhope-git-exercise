@@ -1,9 +1,9 @@
 const student = [
     { name : "Antonio", surname: "Martinez", 
     age: 25, city: "valencia", 
-    hobby: "SimRacing" , favouriteFood: "Pizza",
-    favouriteVideoGame: "Bloodborne", favouriteFilm : "Shutter Island",
-    favouriteBook: "El resplandor", petName : "Midna"
+    hobby: "SimRacing" , favoriteFood: "Pizza",
+    favoriteVideoGame: "Bloodborne", favoriteFilm : "Shutter Island",
+    favoriteBook: "El resplandor", petName : "Midna"
     },
 
     { name : "Luis", surname : "Grandini",
@@ -16,13 +16,13 @@ const student = [
     age:28, city:"Madrid",
     hobby:"Videojuegos", favoritefood:"Pasta",
     favoritevideogame:"The Legend of Heroes", favoritefilm:"Your Name",
-    favoritebook:"Harry Potter", petname:""
+    favoritebook:"Harry Potter", petname: ""
     },
     { name: "Richard", surname: "Suarez",
     age: 27, city: "Ciudad Real",
     hobby: "Tocar guitarra", favoriteFood: "Hamburguesas",
     favoriteVideoGame: "The Last of Us", favoriteFilm: "Hachiko",
-    favoriteBook: "Hábitos Atómicos", petName: "",
+    favoriteBook: "Hábitos Atómicos", petName: ""
     },
 ];
 
