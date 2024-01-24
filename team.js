@@ -34,3 +34,21 @@ const student = [
 - Print who wrote ‘LOL’ or ‘League Of Legends’ as a favorite video game. (name).
 - Print if there are some members with the same name (name).
 */
+
+function orderAge(stu) {
+    stu.sort((o1,o2) => {
+        if (o1.age < o2.age) {
+            return -1
+        } else if (o1.age < o2.age) {
+            return 1
+        } else{
+            return 0
+        }
+    })
+}
+
+orderAge(student);
+for (let i = 0; i < student.length; i++) {
+    let stud = `${student[i].name} ${student[i].age}`
+    console.log(stud);
+}
