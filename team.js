@@ -13,9 +13,9 @@ const student = [
     },
     { name:"Pedro", surname:"Grandini",
     age:28, city:"Madrid",
-    hobby:"Videojuegos", favoritefood:"Pasta",
-    favoritevideogame:"The Legend of Heroes", favoritefilm:"Your Name",
-    favoritebook:"Harry Potter", petName:""
+    hobby:"Videojuegos", favoriteFood:"Pasta",
+    favoriteVideogame:"The Legend of Heroes", favoriteFilm:"Your Name",
+    favoriteBook:"Harry Potter", petName:""
     },
     { name: "Richard", surname: "Suarez",
     age: 27, city: "Ciudad Real",
@@ -55,6 +55,14 @@ function NoLoleros(studi){
         }
     }
     return Lolsito;
-}
+};
+/*let l = 0
+function sameSurname(estudi){
+    const elSurname = [l]
+    for (let k = 0 ; k < estudi.length ; k++){
+        let apellido = estudi[k].surname
+        if()
+    }
+}*/
 console.log(LasMascotas(student));
 console.log(NoLoleros(student));
